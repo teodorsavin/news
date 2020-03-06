@@ -1,7 +1,7 @@
 import { handleResponse, handleError, jsonToQueryString } from './apiUtils';
 
 export function getLatestNews() {
-  const queryString = { country: 'za', apiKey: process.env.REACT_APP_API_KEY };
+  const queryString = { country: 'nl', apiKey: process.env.REACT_APP_API_KEY };
   const url =
     process.env.REACT_APP_API_URL +
     'top-headlines' +
