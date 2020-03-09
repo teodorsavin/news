@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
+
 import news from './newsReducer';
 import countries from './countriesReducer';
 
