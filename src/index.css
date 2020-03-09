@@ -19,3 +19,13 @@ code {
 .card-header {
   cursor: pointer;
 }
+
+nav img {
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+}
+
+.news-container {
+  margin-top: 20px;
+}

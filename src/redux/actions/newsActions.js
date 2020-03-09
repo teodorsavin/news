@@ -1,15 +1,15 @@
 import * as newsApi from '../../api/newsApi';
 
-export function loadNewsSuccess(news) {
-  return { type: 'LIST_NEWS_SUCCESS', news };
+export function loadNewsSuccess(news, country) {
+  return { type: 'LIST_NEWS_SUCCESS', news, country };
 }
 
-export function loadNews() {
+export function loadNews(country) {
   return dispatch => {
     return newsApi
-      .getLatestNews()
+      .getLatestNews(country)
       .then(news => {
-        dispatch(loadNewsSuccess(news));
+        dispatch(loadNewsSuccess(news, country));
       })
       .catch(error => error);
   };
